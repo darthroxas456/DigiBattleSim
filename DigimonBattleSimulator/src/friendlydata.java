@@ -19,7 +19,6 @@ public class friendlydata {
 		System.out.println("Male");
 	}else { System.out.println("Female");
 	}
-}
-
-}
+  }
+}	
 
