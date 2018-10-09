@@ -1,5 +1,9 @@
 //OWEN ROSE
+//This program is to be a turn based battle simulator 
+//where you battle foes to become more powerful.
 import javax.swing.JOptionPane;
+
+//GREETING BELOW
 
 // to save everything click save aLL and then right click on the java folder and click delete. 
 // AS LONG AS YOU SAVED IT WILL NOT REALLY DELETE IT!!!
