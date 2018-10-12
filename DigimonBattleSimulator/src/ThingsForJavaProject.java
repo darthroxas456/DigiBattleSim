@@ -1,5 +1,7 @@
 //OWEN ROSE
-
+  import java.io.*;
+  import java.util.*;
+    
 public class ThingsForJavaProject {
 	
 	public static void doProject() {
@@ -28,25 +30,47 @@ public class ThingsForJavaProject {
 	double dti = 25.4;
 	int itd = (int)dti;
 	//System.out.println(num2) <-- this is what you use to print the new int from the old double.
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	System.out.println(itd);
+	   System.out.println(itd);
 	
 	}
+	public class Solution{
+	    
+	  
+	    public void main(String[] args) {
+	        
+	        
+	        Scanner sc=new Scanner(System.in);
+	        
+	        String a="hello";
+	        String b="world";
+	        
+	        String A=sc.next();
+	        String B=sc.next();
+	        // the string method used below is the addition method which adds all the characters of two strings together.
+	       System.out.println(A.length()+B.length());
+	       //the string method used below is the compareto method which compares one sting to another.
+	        System.out.println(A.compareTo(B)>0?"Yes":"No");
+	       //the string method below is the toUpperCase mehtod which is used to set certain characters to capital letters.
+	        System.out.println(A.substring(0, 1).toUpperCase()+A.substring(1, A.length())+" "+B.substring(0, 1).toUpperCase()+B.substring(1, B.length()));
+	        
+	    }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 }

@@ -11,8 +11,8 @@ public class DigimionBattleSimulator {
 // Hello, and welcome to the Digimon Battle Simulator by Owen Rose.<--Greeting
 // This program is a turn based battle simulator in the digital monster universe. <--Description 
 	public static void main(String[] args) {
-		
-		System.out.println("Hello, Digital Trainer, and welcome to Digimon Battle Simulator!");
+		                                 //escape sequence below (\n)
+		System.out.println("Hello, Digital Trainer, \n and welcome to Digimon Battle Simulator!");
 				//The string below is a sting to allow the string after it to have 2 acceptable values when run, which is "yes" and "no"
 		String[] acceptableValues = { "Yes", "No"};
 				//the string below creates a choice box with asks the user if they are ready for their adventure or not.
@@ -160,7 +160,7 @@ public class DigimionBattleSimulator {
 		
 		
 //CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE
-		//ThingsForJavaProject.doProject();
+		ThingsForJavaProject.doProject();
 		
 		
 		
