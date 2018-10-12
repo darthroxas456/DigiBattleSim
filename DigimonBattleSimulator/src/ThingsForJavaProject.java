@@ -1,7 +1,14 @@
 //OWEN ROSE
   import java.io.*;
   import java.util.*;
-    
+  import java.util.Random;
+  import java.util.Scanner;
+  import java.lang.Math; 
+  import java.security.*;
+  import java.text.*;
+  import java.util.concurrent.*;
+  import java.util.regex.*;
+  
 public class ThingsForJavaProject {
 	
 	public static void doProject() {
@@ -24,6 +31,8 @@ public class ThingsForJavaProject {
 //Variable: A storage of memory waiting to be declared. 
 
 //Scope: The section of code where a variable can be accessed. 
+	  
+//Operator Precedence: Several operations occur in an expression, each part is evaluated and resolved in a predetermined order
 		
 	// dataType variableName = (dataType)variableToConvert; this is a form of casting. 
 	//Casting is when you have a bigger form of code and want to make the memory required for it smaller. 
@@ -33,7 +42,8 @@ public class ThingsForJavaProject {
 	   System.out.println(itd);
 	
 	}
-	public class Solution{
+	
+	public static class Solution{
 	    
 	  
 	    public void main(String[] args) {
@@ -52,25 +62,161 @@ public class ThingsForJavaProject {
 	        System.out.println(A.compareTo(B)>0?"Yes":"No");
 	       //the string method below is the toUpperCase mehtod which is used to set certain characters to capital letters.
 	        System.out.println(A.substring(0, 1).toUpperCase()+A.substring(1, A.length())+" "+B.substring(0, 1).toUpperCase()+B.substring(1, B.length()));
-	        
+	        //The sting below contains the "==" token which is used in Boolean to see is one sting is equal the other.
+	        System.out.println(A.compareTo(B)>0? == B.compareTo(A)"Yes":"No");
 	    }
+	}
+	
+	class Main {
+	  //header and parameter listed below.
+	  public void main(String[] args) {
+	    double length = 5.0;
+	    double width = 2.5;
+	    System.out.println(calculateArea(length, width));
+	  }
+	  //method call and argument is listed below: calculateArea=call (double side1, double side2)=argument.
+	  public double calculateArea(double side1, double side2) {
+	    double area;
+	    area = side1 * side2;
+	  return area;
+	  //^^^^^created methods with arguments and return values above^^^^^.
+	  }
+	}
+	
+	class Main2{
+	    public void main(String[] args) {
+	      //the random class is used below.
+	      Random randomGen = new Random();
+	      System.out.println(randomGen.nextInt(54));
+	      System.out.println(randomGen.nextInt(54));
+	      System.out.println(randomGen.nextInt(54));
+	      System.out.println(randomGen.nextInt(54));
+	      System.out.println(randomGen.nextInt(54));
+	      System.out.println(randomGen.nextInt(54));
+	    }
+	  }
+	
+	class Beta {
+	  public void main(String[] args) {
+	    
+	    Scanner scan = new Scanner(System.in);
+	    System.out.println("Tell me the size of your slice and I will tell"); 
+	    System.out.println("you which is larger, the number entered, or PI");
+	    double slice = scan.nextDouble();
+	    // output the larger value, slice or PI
+	    System.out.println(java.lang.Math.max(Math.PI, slice));
+	    
+	    
+	  }  
+
+	
+	
+	
+	
+	
+	}
+	
+	public class Solution2 {
+
+
+	          //final is used below
+	    private final Scanner scanner = new Scanner(System.in);
+
+	    public void main(String[] args) {
+	        int N = scanner.nextInt();
+	        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+	        if(N%2 == 0){
+	            if(2<=N && N<=5){  
+	                System.out.println("Not Weird");
+	            }else if(N>20){
+	                        System.out.println("Not Weird");  
+	            }else if(6<=N && N<=20){
+	                System.out.println("Weird");
+	            }
+	        }else{
+	                System.out.println("Weird");
+	        }
+
+	        scanner.close();
+	    } {
+
+      //switch statement used below.
+	    switch (true) {
+	        case 'a, e, i, o, u'.includes(s[0]):
+	            letter = 'A';
+	        break;
+	        
+	        case 'b, c, d, f, g'.includes(s[0]):
+	            letter = 'B';
+	        break;
+
+	        case 'h, j, k, l, m'.includes(s[0]):
+	            letter = 'C'
+	        break;
+
+	        case 'n, p, q, r, s, t, v, w, x, y, z'.includes(s[0]):
+	            letter = 'D'
+	        break;
+	    }
+	    return letter;
+	    }
+	}
+	
+	class ComparisonDemo {
+
+	    public void main(String[] args){
+	      //relational and conditional operators were used below.
+	        int value1 = 1;
+	        int value2 = 2;
+	        if(value1 == value2)
+	            System.out.println("value1 == value2");
+	        if(value1 != value2)
+	            System.out.println("value1 != value2");
+	        if(value1 > value2)
+	            System.out.println("value1 > value2");
+	        if(value1 < value2)
+	            System.out.println("value1 < value2");
+	        if(value1 <= value2)
+	            System.out.println("value1 <= value2");
+	    }
+	}
+
+	public class Solution4 {
+	   //used operators such as '*' '/' and '+'.
+	    void solve(double meal_cost, int tip_percent, int tax_percent) {
+
+	        double tip_amount = meal_cost*tip_percent/100;
+
+	        double tax_amount =meal_cost*tax_percent/100;
+
+	        double TotalCost = meal_cost+tip_amount+tax_amount;
+	        
+	           
+
+	        System.out.println(Math.round(TotalCost));
+	}
+
+	    private final Scanner scanner = new Scanner(System.in);
+
+	    public void main(String[] args) {
+	        double meal_cost = scanner.nextDouble();
+	        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+	        int tip_percent = scanner.nextInt();
+	        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+	        int tax_percent = scanner.nextInt();
+	        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+	        solve(meal_cost, tip_percent, tax_percent);
+	        
+	        scanner.close();
+	    }
+	
 	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	
 }
