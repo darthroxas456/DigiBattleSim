@@ -160,7 +160,7 @@ public class DigimionBattleSimulator {
 		
 		
 //CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE
-		ThingsForJavaProject.doProject();
+		//ThingsForJavaProject.doProject();
 		
 		
 		
