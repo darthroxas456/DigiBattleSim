@@ -18,7 +18,7 @@ public class friendlydata {
 	//a variable is true or false based on thing you have set for the code.
 	// The second is the final code word, 
 	//which is used to make either public or private codes unchangeable once the code is in use.
-	public boolean gender;
+	public final boolean gender;
 	{
 	if (gender = true){
 		System.out.println("Male");
