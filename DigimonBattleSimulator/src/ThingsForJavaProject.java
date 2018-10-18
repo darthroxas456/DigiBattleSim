@@ -216,7 +216,27 @@ public class ThingsForJavaProject {
 	
 	}
 	
+	public class Loop {
+	  public void main(String[] args) { 
+	 int continueProgram = 1;
+	 while (continueProgram == 1) {
+	      // your program
+	      System.out.println("Press 1 to continue or 2 to quit.");
+	      continueProgram = keyboard.nextInt();
+	 }
+	}
+	}
+
 	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 }
