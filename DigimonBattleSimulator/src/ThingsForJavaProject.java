@@ -255,7 +255,7 @@ public class Solution4 {
 }
 
 
-public class Loop {
+ class Loop {
   public void main(String[] args) {
     int continueProgram = 1;
     // WHILE LOOP CREATED BELOW VVV
@@ -267,6 +267,47 @@ public class Loop {
   }
 }
 
-
-
+//use of the this codeword.
+ 
+ class Frog{
+   
+   private String name;
+   private int age;
+   
+   public void setName(String name){
+       this.name = name;
+   }
+   
+   public void setAge(int age){
+       this.age = age;
+   }
+   
+   public String getName(){
+       return name;
+   }
+   
+   public int getAge() {
+       return age;
+   }
+   
 }
+
+class work {
+   
+   public static void main(String[] args) {
+       
+       Frog frog1 = new Frog();
+       
+       //frog1.name = "Owen";
+       //frog1.age = 1;
+       
+       frog1.setName("Logan");
+       frog1.setAge(2);
+       
+       System.out.println(frog1.getName() + " " + frog1.getAge());
+           
+   }
+}
+
+
+
