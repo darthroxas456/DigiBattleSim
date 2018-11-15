@@ -150,7 +150,7 @@ class Beta {
 }
 
 
-public class Solution2 {
+ class Solution2 {
 
 
   // final is used below
@@ -220,7 +220,7 @@ class ComparisonDemo {
 }
 
 
-public class Solution4 {
+ class Solution4 {
   // used operators such as '*' '/' and '+'.
   void solve(double meal_cost, int tip_percent, int tax_percent) {
 
@@ -258,56 +258,31 @@ public class Solution4 {
  class Loop {
   public void main(String[] args) {
     int continueProgram = 1;
+    Scanner scanner = new Scanner(System.in);
     // WHILE LOOP CREATED BELOW VVV
+    
     while (continueProgram == 1) {
       // your program
       System.out.println("Press 1 to continue or 2 to quit.");
-      continueProgram = keyboard.nextInt();
+      continueProgram = scanner.nextInt();
     }
   }
 }
 
-//use of the this codeword.
+// use of the FOR loop.
+ class code {{
+   for(int i= 0; i <= 10; i = i++) {
+       System.out.println("For loop was used.");
+       System.out.println(i);
+   }
+
+ }}
  
- class Frog{
+//Do/While loop used below.
+ 
+ class code2{
+   int counter = 0;
+   Scanner scanner = new Scanner(System.in);
    
-   private String name;
-   private int age;
-   
-   public void setName(String name){
-       this.name = name;
-   }
-   
-   public void setAge(int age){
-       this.age = age;
-   }
-   
-   public String getName(){
-       return name;
-   }
-   
-   public int getAge() {
-       return age;
-   }
-   
-}
 
-class work {
-   
-   public static void main(String[] args) {
-       
-       Frog frog1 = new Frog();
-       
-       //frog1.name = "Owen";
-       //frog1.age = 1;
-       
-       frog1.setName("Logan");
-       frog1.setAge(2);
-       
-       System.out.println(frog1.getName() + " " + frog1.getAge());
-           
-   }
-}
-
-
-
+ }
