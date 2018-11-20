@@ -80,24 +80,28 @@ public class ThingsForJavaProject {
 
 
   public static void compareStrings() {
-	        
-	        
-	        Scanner sc=new Scanner(System.in);
-	        
-	        String a="hello";
-	        String b="world";
-	        
-	        String A=sc.next();
-	        String B=sc.next();
-	        // the string method used below is the addition method which adds all the characters of two strings together.
-	       System.out.println(A.length()+B.length());
-	       //the string method used below is the compareto method which compares one sting to another.
-	        System.out.println(A.compareTo(B)>0?"Yes":"No");
-	       //the string method below is the toUpperCase mehtod which is used to set certain characters to capital letters.
-	        System.out.println(A.substring(0, 1).toUpperCase()+A.substring(1, A.length())+" "+B.substring(0, 1).toUpperCase()+B.substring(1, B.length()));
-	        //The sting below contains the "==" token which is used in Boolean to see is one sting is equal the other.
-	        System.out.println(A.compareTo(B)>0? == B.compareTo(A)"Yes":"No");
-	    }
+
+
+    Scanner sc = new Scanner(System.in);
+
+    String a = "hello";
+    String b = "world";
+
+    String A = sc.next();
+    String B = sc.next();
+    // the string method used below is the addition method which adds all the characters of two
+    // strings together.
+    System.out.println(A.length() + B.length());
+    // the string method used below is the compareTo method which compares one sting to another.
+    System.out.println(A.compareTo(B) > 0 ? "Yes" : "No");
+    // the string method below is the toUpperCase method which is used to set certain characters to
+    // capital letters.
+    System.out.println(A.substring(0, 1).toUpperCase() + A.substring(1, A.length()) + " "
+        + B.substring(0, 1).toUpperCase() + B.substring(1, B.length()));
+    // The sting below contains the "==" token which is used in Boolean to see is one sting is equal
+    // the other.
+     System.out.println(A.compareTo(B)>0 == B.compareTo(A)>0? "Yes":"No");
+  }
 
 
   // header and parameter listed below.
@@ -115,7 +119,6 @@ public class ThingsForJavaProject {
     return area;
     // ^^^^^created methods with arguments and return values above^^^^^.
   }
-
 
 
 
@@ -150,7 +153,7 @@ class Beta {
 }
 
 
- class Solution2 {
+class Solution2 {
 
 
   // final is used below
@@ -220,7 +223,7 @@ class ComparisonDemo {
 }
 
 
- class Solution4 {
+class Solution4 {
   // used operators such as '*' '/' and '+'.
   void solve(double meal_cost, int tip_percent, int tax_percent) {
 
@@ -255,12 +258,12 @@ class ComparisonDemo {
 }
 
 
- class Loop {
+class Loop {
   public void main(String[] args) {
     int continueProgram = 1;
     Scanner scanner = new Scanner(System.in);
     // WHILE LOOP CREATED BELOW VVV
-    
+
     while (continueProgram == 1) {
       // your program
       System.out.println("Press 1 to continue or 2 to quit.");
@@ -269,20 +272,31 @@ class ComparisonDemo {
   }
 }
 
+
 // use of the FOR loop.
- class code {{
+class code {{
    for(int i= 0; i <= 10; i = i++) {
        System.out.println("For loop was used.");
        System.out.println(i);
    }
 
  }}
- 
-//Do/While loop used below.
- 
- class code2{
-   int counter = 0;
-   Scanner scanner = new Scanner(System.in);
-   
 
- }
+  // Do/While loop used below.
+
+  public static void doWHile() {
+
+    int value;
+
+    Scanner scanner = new Scanner(System.in);
+
+    do {
+      System.out.println("enter a number between 1 and 10.");
+      value = scanner.nextInt();
+    } while (value < 1 || value > 10);
+    // if while is true DO repeats.
+    System.out.println("you have entered a valid number.");
+  }
+
+
+}
