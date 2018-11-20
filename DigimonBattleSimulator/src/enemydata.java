@@ -20,7 +20,7 @@ public class enemydata {
       System.out.println("Female");
     }
   }
-  
+  // OVERLOADED CONSTRUCTOR / CONSTRUCTOR
   public enemydata(double height, int HP, int ATK, int AGL, int DEF, boolean GENDER){
     this.height = height;
     this.HP = HP;
