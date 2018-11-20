@@ -27,23 +27,19 @@ public class DigimionBattleSimulator {
 		friendlydata Agumon = new friendlydata(5.5, 25, 0, 10, 10, 10, true);
 		
 	//once EXP = 10 Agumon digivolves into Greymon.
-		
-		
+
 		friendlydata Greymon = new friendlydata(25.7,50, 0, 20, 20, 20, true);
  
 	//once EXP = 20 Greymon digivolves into MtlGreymon.
-		
-		
+
 		friendlydata MtlGreymon = new friendlydata(30.5,75, 0, 35, 35, 35, true);
 
 	//once EXP = 40 MtlGreymon Digivolves into WarGreymon.
-		
-		
+
 		friendlydata WarGreymon = new friendlydata(35.0,100, 0, 50, 50, 50, true);
 
 	//once EXP = 100 WarGreymon digivolves into Omnimon.	
-		
-		
+
 		friendlydata Omnimon = new friendlydata(50.5,200, 0, 100, 100, 100, true);
 
 		
@@ -58,77 +54,21 @@ public class DigimionBattleSimulator {
 		
 //start of enemy data 		
 		enemydata BlackAgumon = new enemydata(4.6, 20, 8, 16, 6, false);
-		BlackAgumon.height = 4.6;
-		BlackAgumon.gender = false;
-		BlackAgumon.HP = 20;
-		BlackAgumon.ATK = 8;
-		BlackAgumon.DEF = 16;
-		BlackAgumon.AGL = 6;
+
+		enemydata Patamon = new enemydata(4.6, 20, 15, 4, 1, true);
 		
-		
-		enemydata Patamon = new enemydata();
-		Patamon.height = 4.6;
-		Patamon.gender = true;
-		Patamon.HP = 20;
-		Patamon.ATK = 15;
-		Patamon.DEF = 4;
-		Patamon.AGL = 1;
-		
-		
-		enemydata Growlmon = new enemydata();
-		Growlmon.height = 25.7;
-		Growlmon.gender = true;
-		Growlmon.HP = 45;
-		Growlmon.ATK = 20;
-		Growlmon.DEF = 15;
-		Growlmon.AGL = 7;
-		
-		
-		enemydata Devilmon = new enemydata();
-		Devilmon.height = 25.6;
-		Devilmon.gender = true;
-		Devilmon.HP = 50;
-		Devilmon.ATK = 25;
-		Devilmon.DEF = 20;
-		Devilmon.AGL = 10;
-		
-		
-		enemydata WarGrowlmon = new enemydata();
-		WarGrowlmon.height = 30.0;
-		WarGrowlmon.gender = false;
-		WarGrowlmon.HP = 70;
-		WarGrowlmon.ATK = 30;
-		WarGrowlmon.DEF = 30;
-		WarGrowlmon.AGL = 30;
-		
-		
-		enemydata RiseGreymon =  new enemydata(); 
-		RiseGreymon.height = 30.2;
-		RiseGreymon.gender = false;
-		RiseGreymon.HP = 75;
-		RiseGreymon.ATK = 35;
-		RiseGreymon.DEF = 25;
-		RiseGreymon.AGL = 20;
-		
-		
-		enemydata Gallantmon = new enemydata ();
-		Gallantmon.height = 36.2;
-		Gallantmon.gender = true;
-		Gallantmon.HP = 90;
-		Gallantmon.ATK = 45;
-		Gallantmon.DEF = 50;
-		Gallantmon.AGL = 40;
-		
-		
-		enemydata WarGreymonB = new enemydata();
-		WarGreymonB.height = 35.0;
-		WarGreymonB.gender = true;
-		WarGreymonB.HP = 100;
-		WarGreymonB.ATK = 50;
-		WarGreymonB.DEF = 50;
-		WarGreymonB.AGL = 51;
-				
-		
+		enemydata Growlmon = new enemydata(25.7, 45, 20, 15, 7, true);
+
+		enemydata Devilmon = new enemydata(25.6, 50, 25, 20, 10, true);
+
+		enemydata WarGrowlmon = new enemydata(30.0, 70, 30, 30, 30, false);
+
+		enemydata RiseGreymon =  new enemydata(30.2, 75, 35, 25, 20,false); 
+
+		enemydata Gallantmon = new enemydata(36.2, 90, 45, 50, 40,true);
+
+		enemydata WarGreymonB = new enemydata(35.0, 100, 50, 50, 51, true);
+
 		
 //CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE
 		//ThingsForJavaProject.doProject();
