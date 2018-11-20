@@ -24,57 +24,28 @@ public class DigimionBattleSimulator {
 		
 		//1 EXP== 1 enemy defeated!
 		
-		friendlydata Agumon = new friendlydata();
-		Agumon.height = 5.5;
-		Agumon.gender = true;
-		Agumon.HP = 25;
-		Agumon.EXP = 0;
-		Agumon.ATK = 10;
-		Agumon.DEF = 10;
-		Agumon.AGL = 10;
+		friendlydata Agumon = new friendlydata(5.5, 25, 0, 10, 10, 10, true);
+		
 	//once EXP = 10 Agumon digivolves into Greymon.
 		
 		
-		friendlydata Greymon = new friendlydata();
-		Greymon.height = 25.7;
-		Greymon.gender = true;
-		Greymon.HP = 50;
-		Greymon.EXP = 0;
-		Greymon.ATK = 20;
-		Greymon.DEF = 20;
-		Greymon.AGL = 20;
+		friendlydata Greymon = new friendlydata(25.7,50, 0, 20, 20, 20, true);
+ 
 	//once EXP = 20 Greymon digivolves into MtlGreymon.
 		
 		
-		friendlydata MtlGreymon = new friendlydata();
-		MtlGreymon.height = 30.5;
-		MtlGreymon.gender = true;
-		MtlGreymon.HP = 75;
-		MtlGreymon.EXP = 0;
-		MtlGreymon.ATK = 35;
-		MtlGreymon.DEF = 35;
-		MtlGreymon.AGL = 35;
+		friendlydata MtlGreymon = new friendlydata(30.5,75, 0, 35, 35, 35, true);
+
 	//once EXP = 40 MtlGreymon Digivolves into WarGreymon.
 		
 		
-		friendlydata WarGreymon = new friendlydata();
-		WarGreymon.height = 35.0;
-		WarGreymon.gender = true;
-		WarGreymon.HP = 100;
-		WarGreymon.EXP = 0;
-		WarGreymon.ATK = 50;
-		WarGreymon.DEF = 50;
-		WarGreymon.AGL = 50;
+		friendlydata WarGreymon = new friendlydata(35.0,100, 0, 50, 50, 50, true);
+
 	//once EXP = 100 WarGreymon digivolves into Omnimon.	
 		
 		
-		friendlydata Omnimon = new friendlydata();
-		Omnimon.height = 50.5;
-		Omnimon.gender = true;
-		Omnimon.HP = 200;
-		Omnimon.ATK = 100;
-		Omnimon.DEF = 100;
-		Omnimon.AGL = 100;
+		friendlydata Omnimon = new friendlydata(50.5,200, 0, 100, 100, 100, true);
+
 		
 	//I WANT TO PRINT THIS (WRITTEN BELOW) AFTER THE DIGITAL TRAINER OBTAINS OMNIMON!!!
 	//You have gotten this far. You now are unstoppable.
@@ -86,7 +57,7 @@ public class DigimionBattleSimulator {
 		
 		
 //start of enemy data 		
-		enemydata BlackAgumon = new enemydata();
+		enemydata BlackAgumon = new enemydata(4.6, 20, 8, 16, 6, false);
 		BlackAgumon.height = 4.6;
 		BlackAgumon.gender = false;
 		BlackAgumon.HP = 20;

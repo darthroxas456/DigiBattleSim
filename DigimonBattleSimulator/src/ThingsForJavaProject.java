@@ -1,4 +1,4 @@
-// OWEN ROSE
+// OWEN ROSE <<<<< NAME
 import java.io.*;
 import java.util.*;
 import java.util.Random;
@@ -154,8 +154,6 @@ class Beta {
 
 
 class Solution2 {
-
-
   // final is used below
   private final Scanner scanner = new Scanner(System.in);
 
@@ -178,28 +176,28 @@ class Solution2 {
     scanner.close();
   }
 
-  {
+  public static void sStatment(){
+  
+      //switch statement used below.      
+      switch (true) {
+          case 'a, e, i, o, u'.includes(s[0]):
+              letter = 'A';
+          break;
+          
+          case 'b, c, d, f, g'.includes(s[0]):
+              letter = 'B';
+          break;
 
-      //switch statement used below.
-	    switch (true) {
-	        case 'a, e, i, o, u'.includes(s[0]):
-	            letter = 'A';
-	        break;
-	        
-	        case 'b, c, d, f, g'.includes(s[0]):
-	            letter = 'B';
-	        break;
+          case 'h, j, k, l, m'.includes(s[0]):
+              letter = 'C'
+          break;
 
-	        case 'h, j, k, l, m'.includes(s[0]):
-	            letter = 'C'
-	        break;
-
-	        case 'n, p, q, r, s, t, v, w, x, y, z'.includes(s[0]):
-	            letter = 'D'
-	        break;
-	    }
-	    return letter;
-	    }
+          case 'n, p, q, r, s, t, v, w, x, y, z'.includes(s[0]):
+              letter = 'D'
+          break;
+      }
+      return letter;
+  }
 }
 
 
@@ -223,7 +221,7 @@ class ComparisonDemo {
 }
 
 
-class Solution4 {
+class cost {
   // used operators such as '*' '/' and '+'.
   void solve(double meal_cost, int tip_percent, int tax_percent) {
 
@@ -240,7 +238,7 @@ class Solution4 {
 
   private final Scanner scanner = new Scanner(System.in);
 
-  public void main(String[] args) {
+  public void price(){
     double meal_cost = scanner.nextDouble();
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -255,11 +253,8 @@ class Solution4 {
     scanner.close();
   }
 
-}
 
-
-class Loop {
-  public void main(String[] args) {
+public static void loop(){
     int continueProgram = 1;
     Scanner scanner = new Scanner(System.in);
     // WHILE LOOP CREATED BELOW VVV
@@ -268,19 +263,19 @@ class Loop {
       // your program
       System.out.println("Press 1 to continue or 2 to quit.");
       continueProgram = scanner.nextInt();
+      scanner.close();
     }
   }
-}
 
 
 // use of the FOR loop.
-class code {{
+public static void forLoop() {
    for(int i= 0; i <= 10; i = i++) {
        System.out.println("For loop was used.");
        System.out.println(i);
    }
 
- }}
+ }
 
   // Do/While loop used below.
 
@@ -296,7 +291,41 @@ class code {{
     } while (value < 1 || value > 10);
     // if while is true DO repeats.
     System.out.println("you have entered a valid number.");
+    scanner.close();
   }
-
-
 }
+
+class Main {
+  public static void main(String[] args) {
+      MightyByte myByte = new MightyByte("00000101");
+      System.out.println(myByte.getDecimalValue());
+    
+  }
+}
+
+class MightyByte {
+    public String bits;
+    
+    // CONSTRUCTOR IS BELOW VVVV
+    
+    public MightyByte(String bit){
+      bits = bit;
+    }
+    
+    public int getDecimalValue() {
+        int decimalValue = 0;
+        int intValue;
+        int power = 7;
+        for (int i = 0; i < bits.length(); i++)
+        {
+          
+            char c = bits.charAt(i); // get the character at position i in string bits 
+            intValue = Character.getNumericValue(c);
+            decimalValue += intValue * Math.pow(2, power);
+            power = power - 1;
+        }
+        return decimalValue;
+    }
+     
+}
+
