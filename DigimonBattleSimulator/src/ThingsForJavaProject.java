@@ -332,4 +332,68 @@ class MightyByte {
 // INHERITANCE: The process where one class acquires the properties (methods and fields) of another. 
 //              With the use of inheritance the information is made manageable in a hierarchical order.
 
+//USE OF POLYMORPHISM BELOW VVVV 
+
+ class Bicycle {
+  
+// the Bicycle class has three fields
+public int cadence;
+public int gear;
+public int speed;
+    
+// the Bicycle class has one constructor
+public Bicycle(int startCadence, int startSpeed, int startGear) {
+    gear = startGear;
+    cadence = startCadence;
+    speed = startSpeed;
+}
+    
+// the Bicycle class has four methods
+public void setCadence(int newValue) {
+    cadence = newValue;
+}
+    
+public void setGear(int newValue) {
+    gear = newValue;
+}
+    
+public void applyBrake(int decrement) {
+    speed -= decrement;
+}
+    
+public void speedUp(int increment) {
+    speed += increment;
+}
+public void printDescription(){
+  System.out.println("\nBike is " + "in gear " + this.gear
+      + " with a cadence of " + this.cadence +
+      " and travelling at a speed of " + this.speed + ". ");
+
+}
+
+ 
+ class MountainBike extends Bicycle {
+private String suspension;
+public MountainBike(
+           int startCadence,
+           int startSpeed,
+           int startGear,
+           String suspensionType){
+    super(startCadence,
+          startSpeed,
+          startGear);
+    this.setSuspension(suspensionType);
+}
+public String getSuspension(){
+  return this.suspension;
+}
+public void setSuspension(String suspensionType) {
+    this.suspension = suspensionType;
+}
+public void printDescription() {
+    super.printDescription();
+    System.out.println("The " + "MountainBike has a" +
+        getSuspension() + " suspension.");
+}
+} 
 
