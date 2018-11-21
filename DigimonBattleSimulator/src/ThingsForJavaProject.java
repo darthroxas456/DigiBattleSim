@@ -1,13 +1,11 @@
 // OWEN ROSE <<<<< NAME
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import java.lang.Math;
-import java.security.*;
-import java.text.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.*;
 
 public class ThingsForJavaProject {
 
@@ -100,7 +98,7 @@ public class ThingsForJavaProject {
         + B.substring(0, 1).toUpperCase() + B.substring(1, B.length()));
     // The sting below contains the "==" token which is used in Boolean to see is one sting is equal
     // the other.
-     System.out.println(A.compareTo(B)>0 == B.compareTo(A)>0? "Yes":"No");
+    System.out.println(A.compareTo(B) > 0 == B.compareTo(A) > 0 ? "Yes" : "No");
   }
 
 
@@ -238,7 +236,7 @@ class cost {
 
   private final Scanner scanner = new Scanner(System.in);
 
-  public void price(){
+  public void price() {
     double meal_cost = scanner.nextDouble();
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -254,7 +252,7 @@ class cost {
   }
 
 
-public static void loop(){
+  public static void loop() {
     int continueProgram = 1;
     Scanner scanner = new Scanner(System.in);
     // WHILE LOOP CREATED BELOW VVV
@@ -268,14 +266,14 @@ public static void loop(){
   }
 
 
-// use of the FOR loop.
-public static void forLoop() {
-   for(int i= 0; i <= 10; i = i++) {
-       System.out.println("For loop was used.");
-       System.out.println(i);
-   }
+  // use of the FOR loop.
+  public static void forLoop() {
+    for (int i = 0; i <= 10; i = i++) {
+      System.out.println("For loop was used.");
+      System.out.println(i);
+    }
 
- }
+  }
 
   // Do/While loop used below.
 
@@ -295,105 +293,239 @@ public static void forLoop() {
   }
 }
 
+
 class Main {
   public static void main(String[] args) {
-      MightyByte myByte = new MightyByte("00000101");
-      System.out.println(myByte.getDecimalValue());
-    
+    MightyByte myByte = new MightyByte("00000101");
+    System.out.println(myByte.getDecimalValue());
+
   }
 }
 
+
 class MightyByte {
-    public String bits;
-    
-    // CONSTRUCTOR IS BELOW VVVV
-    
-    public MightyByte(String bit){
-      bits = bit;
+  public String bits;
+
+  // CONSTRUCTOR IS BELOW VVVV
+
+  public MightyByte(String bit) {
+    bits = bit;
+  }
+
+  public int getDecimalValue() {
+    int decimalValue = 0;
+    int intValue;
+    int power = 7;
+    for (int i = 0; i < bits.length(); i++) {
+
+      char c = bits.charAt(i); // get the character at position i in string bits
+      intValue = Character.getNumericValue(c);
+      decimalValue += intValue * Math.pow(2, power);
+      power = power - 1;
     }
-    
-    public int getDecimalValue() {
-        int decimalValue = 0;
-        int intValue;
-        int power = 7;
-        for (int i = 0; i < bits.length(); i++)
-        {
-          
-            char c = bits.charAt(i); // get the character at position i in string bits 
-            intValue = Character.getNumericValue(c);
-            decimalValue += intValue * Math.pow(2, power);
-            power = power - 1;
-        }
-        return decimalValue;
-    }
-     
+    return decimalValue;
+  }
+
 }
 
-// INHERITANCE: The process where one class acquires the properties (methods and fields) of another. 
-//              With the use of inheritance the information is made manageable in a hierarchical order.
+// INHERITANCE: The process where one class acquires the properties (methods and fields) of another.
+// With the use of inheritance the information is made manageable in a hierarchical order.
 
-//USE OF POLYMORPHISM BELOW VVVV 
 
- class Bicycle {
-  
-// the Bicycle class has three fields
-public int cadence;
-public int gear;
-public int speed;
-    
-// the Bicycle class has one constructor
-public Bicycle(int startCadence, int startSpeed, int startGear) {
+// USE OF POLYMORPHISM BELOW VVVV
+
+class Bicycle {
+
+  // the Bicycle class has three fields
+  public int cadence;
+  public int gear;
+  public int speed;
+
+  // the Bicycle class has one constructor
+  public Bicycle(int startCadence, int startSpeed, int startGear) {
     gear = startGear;
     cadence = startCadence;
     speed = startSpeed;
-}
-    
-// the Bicycle class has four methods
-public void setCadence(int newValue) {
+  }
+
+  // the Bicycle class has four methods
+  public void setCadence(int newValue) {
     cadence = newValue;
-}
-    
-public void setGear(int newValue) {
+  }
+
+  public void setGear(int newValue) {
     gear = newValue;
-}
-    
-public void applyBrake(int decrement) {
+  }
+
+  public void applyBrake(int decrement) {
     speed -= decrement;
-}
-    
-public void speedUp(int increment) {
+  }
+
+  public void speedUp(int increment) {
     speed += increment;
-}
-public void printDescription(){
-  System.out.println("\nBike is " + "in gear " + this.gear
-      + " with a cadence of " + this.cadence +
-      " and travelling at a speed of " + this.speed + ". ");
+  }
 
+  public void printDescription() {
+    System.out.println("\nBike is " + "in gear " + this.gear + " with a cadence of " + this.cadence
+        + " and travelling at a speed of " + this.speed + ". ");
+
+  }
+
+
+  class MountainBike extends Bicycle {
+    private String suspension;
+
+    public MountainBike(int startCadence, int startSpeed, int startGear, String suspensionType) {
+      super(startCadence, startSpeed, startGear); // <<<<<<<the SUPER code work is used here <<<<<
+      this.setSuspension(suspensionType);
+    }
+
+    public String getSuspension() {
+      return this.suspension;
+    }
+
+    public void setSuspension(String suspensionType) {
+      this.suspension = suspensionType;
+    }
+
+    public void printDescription() {
+      super.printDescription();
+      System.out.println("The " + "MountainBike has a" + getSuspension() + " suspension.");
+    }
+  }
 }
 
- 
- class MountainBike extends Bicycle {
-private String suspension;
-public MountainBike(
-           int startCadence,
-           int startSpeed,
-           int startGear,
-           String suspensionType){
-    super(startCadence,
-          startSpeed,
-          startGear);
-    this.setSuspension(suspensionType);
-}
-public String getSuspension(){
-  return this.suspension;
-}
-public void setSuspension(String suspensionType) {
-    this.suspension = suspensionType;
-}
-public void printDescription() {
-    super.printDescription();
-    System.out.println("The " + "MountainBike has a" +
-        getSuspension() + " suspension.");
-}
-} 
 
+class App {
+  public static void main(String[] args) {
+    // (one dimensional array)
+    int[] values = {3, 5, 2343};
+
+    System.out.println(values[0]);
+    // (prints out 3)
+
+    // (multi-dimensional array)
+    int[][] grid = {{3, 5, 2343}, {2, 4}, {1, 2, 3, 4}};
+
+    System.out.println(grid[1][1]);
+    // (prints out 4 from the grid above)
+  }
+}
+// FINDING THE SUM USING AND ACCUMULATOR USED BELOW VVVV
+
+
+class apples {
+
+  public static void main(String[] args) {
+    int bucky[] = {1, 2, 3, 4, 5};
+    int sum = 0;
+
+    for (int counter = 0; counter < bucky.length; counter++) {
+      sum += bucky[counter];
+    }
+    System.out.println("the sum of these numbers is: " + sum);
+    // (prints out: The sum of these numbers is: 15)
+  }
+}
+
+
+// ARRAY LIST CREATED BELOW VVVV
+
+class pineapple {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+    // adding
+    numbers.add(10);
+    numbers.add(100);
+    numbers.add(40);
+
+    // retrieving
+    System.out.println("\n Iteration #1: ");
+    // (prints out 10)
+
+    System.out.println(numbers.get(0));
+
+    // indexed for loop iteration
+    for (int i = 0; i < numbers.size(); i++) {
+      System.out.println(numbers.get(i));
+      // Prints out the numbers above in order
+    }
+
+  }
+}
+
+// ENHANCED FOR LOOP USED BELOW VVVV
+
+
+
+class Colony implements Iterable<Colony.Penguin> {
+  static class Penguin {
+    String name;
+
+    Penguin(String name) {
+      this.name = name;
+    }
+
+    public String toString() {
+      return "Penguin{" + name + "}";
+    }
+  }
+
+  Set<Penguin> set = new HashSet<Penguin>();
+
+  public void addPenguin(Penguin p) {
+    set.add(p);
+  }
+
+  public Iterator<Penguin> getPenguins() {
+    return set.iterator();
+  }
+
+  public Iterator<Penguin> iterator() {
+    return getPenguins();
+  }
+
+  public static void main(String args[]) {
+    Colony colony = new Colony();
+    Penguin opus = new Penguin("Opus");
+    Penguin chilly = new Penguin("Chilly Willy");
+    Penguin mumble = new Penguin("Mumble");
+    Penguin emperor = new Penguin("Emperor");
+    colony.addPenguin(opus);
+    colony.addPenguin(chilly);
+    colony.addPenguin(mumble);
+    colony.addPenguin(emperor);
+    for (Penguin p : colony) {
+      System.out.println(p);
+    }
+  }
+}
+
+
+// EXCEPTION HANDLING DONE BELOW
+
+class Apps {
+
+  public static void main(String[] args) {
+
+    File file = newFile("test.txt");
+
+    try {
+      FileReader fr = new FileReader(file);
+
+      System.out.println("Continuing …. ");
+
+    } catch (FileNotFoundException e) {
+
+      System.out.println("File not found: " + file.toString());
+    }
+
+    System.out.println("Finished.");
+  }
+
+  private static File newFile(String string) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+}
