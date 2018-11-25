@@ -176,7 +176,9 @@ class Solution2 {
 
   public static void sStatment(){
   
-      //switch statement used below.      
+      //switch statement used below.    
+      //BREAK USED BELOW: CAUSES THE PROGRAM SKIP TO THE END OF THE SWITCH AND CONTINUE.
+      //CONTINUES USED BELOW: CAUSES THE PROGRAM TO CONTINUE THOUGH THE SWITCH UNTIL THE END IS REACHED.
       switch (true) {
           case 'a, e, i, o, u'.includes(s[0]):
               letter = 'A';
@@ -192,7 +194,7 @@ class Solution2 {
 
           case 'n, p, q, r, s, t, v, w, x, y, z'.includes(s[0]):
               letter = 'D'
-          break;
+          continue;
       }
       return letter;
   }
