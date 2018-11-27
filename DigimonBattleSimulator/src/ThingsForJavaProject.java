@@ -1,4 +1,22 @@
 // OWEN ROSE <<<<< NAME
+/*
+ * THIS IS THE LIST OF THINGS WHAT I DID NOT GET CREDIT FOR FOR THE INTEGRATION PROJECT PART 2: 
+ * 1. Use break and continue with comments describing what they do: CODE LINE IS 180-197 IN THE THINGS
+ * FOR JAVA PROJECT FILE. 
+ * 
+ * 2. Overload a method: CODE LINES ARE 27-43 & 56-70 IN THE DBS MAIN FOLDER,
+ * THE CONSTRUTORS ARE IN THE FRIENDLY AND ENEMY DATA FOLDERS. 
+ * 
+ * 3. Develop code that makes use of polymorphism: CODE LINES ARE 337-398 IN THE THINGS FOR JAVA PROJECT FOLDER. 
+ * 
+ * 4. Find the smallest value in an array: CODE LINES ARE 401-407 IN THINGS FOR JAVA PROJECT FOLDER 
+ * 
+ * 5. Search an array and identify the index where a value was found: 
+ * CODE LINES ARE 401-407 IN THINGS FOR JAVA PROJECT FOLDER 
+ * 
+ * 6. Search a two-dimensional array and identify the coordinates where a value was found:
+ * CODE LINES ARE 409-413 IN THINGS FOR JAVA PROJECT FOLDER
+ */
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
