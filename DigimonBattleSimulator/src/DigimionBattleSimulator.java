@@ -42,23 +42,23 @@ public class DigimionBattleSimulator {
 		
 		//1 EXP== 1 enemy defeated!
 		
-		friendlydata Agumon = new friendlydata(5.5, 25, 0, 10, 10, 10, true);
+		friendlydata Agumon = new friendlydata(5.5, 25, 0, 10, 10, 10, "Male");
 		
 	//once EXP = 10 Agumon digivolves into Greymon.
 
-		friendlydata Greymon = new friendlydata(25.7,50, 0, 20, 20, 20, true);
+		friendlydata Greymon = new friendlydata(25.7,50, 0, 20, 20, 20, "Male");
  
 	//once EXP = 20 Greymon digivolves into MtlGreymon.
 
-		friendlydata MtlGreymon = new friendlydata(30.5,75, 0, 35, 35, 35, true);
+		friendlydata MtlGreymon = new friendlydata(30.5,75, 0, 35, 35, 35, "Male");
 
 	//once EXP = 40 MtlGreymon Digivolves into WarGreymon.
 
-		friendlydata WarGreymon = new friendlydata(35.0,100, 0, 50, 50, 50, true);
+		friendlydata WarGreymon = new friendlydata(35.0,100, 0, 50, 50, 50, "Male");
 
 	//once EXP = 100 WarGreymon digivolves into Omnimon.	
 
-		friendlydata Omnimon = new friendlydata(50.5,200, 0, 100, 100, 100, true);
+		friendlydata Omnimon = new friendlydata(50.5,200, 0, 100, 100, 100, "Male");
 
 		
 	//I WANT TO PRINT THIS (WRITTEN BELOW) AFTER THE DIGITAL TRAINER OBTAINS OMNIMON!!!
@@ -71,21 +71,21 @@ public class DigimionBattleSimulator {
 		
 		
 //start of enemy data 		
-		enemydata BlackAgumon = new enemydata(4.6, 20, 8, 16, 6, false);
+		enemydata BlackAgumon = new enemydata(4.6, 20, 8, 16, 6, "Female");
 
-		enemydata Patamon = new enemydata(4.6, 20, 15, 4, 1, true);
+		enemydata Patamon = new enemydata(4.6, 20, 15, 4, 1, "Male");
 		
-		enemydata Growlmon = new enemydata(25.7, 45, 20, 15, 7, true);
+		enemydata Growlmon = new enemydata(25.7, 45, 20, 15, 7, "Male");
 
-		enemydata Devilmon = new enemydata(25.6, 50, 25, 20, 10, true);
+		enemydata Devilmon = new enemydata(25.6, 50, 25, 20, 10, "Male");
 
-		enemydata WarGrowlmon = new enemydata(30.0, 70, 30, 30, 30, false);
+		enemydata WarGrowlmon = new enemydata(30.0, 70, 30, 30, 30, "Female");
 
-		enemydata RiseGreymon =  new enemydata(30.2, 75, 35, 25, 20,false); 
+		enemydata RiseGreymon =  new enemydata(30.2, 75, 35, 25, 20, "Female"); 
 
-		enemydata Gallantmon = new enemydata(36.2, 90, 45, 50, 40,true);
+		enemydata Gallantmon = new enemydata(36.2, 90, 45, 50, 40, "Male");
 
-		enemydata WarGreymonB = new enemydata(35.0, 100, 50, 50, 51, true);
+		enemydata WarGreymonB = new enemydata(35.0, 100, 50, 50, 51, "Male");
 
 		
 //CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE

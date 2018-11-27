@@ -12,22 +12,16 @@ public class enemydata {
 
   public int DEF;
 
-  public boolean gender;
-  {
-    if (gender == true) {
-      System.out.println("Male");
-    } else {
-      System.out.println("Female");
-    }
-  }
+  public String GENDER;
+  
   // OVERLOADED CONSTRUCTOR / CONSTRUCTOR
-  public enemydata(double height, int HP, int ATK, int AGL, int DEF, boolean GENDER){
+  public enemydata(double height, int HP, int ATK, int AGL, int DEF, String GENDER){
     this.height = height;
     this.HP = HP;
     this.ATK = ATK;
     this.AGL = AGL;
     this.DEF = DEF;
-    this.gender = gender;
+    this.GENDER = GENDER;
    
   }
 }

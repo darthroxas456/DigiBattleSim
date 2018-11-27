@@ -19,17 +19,11 @@ public class friendlydata {
   // a variable is true or false based on thing you have set for the code.
   // The second is the final code word,
   // which is used to make either public or private codes unchangeable once the code is in use.
-  public boolean GENDER;
-  {
-    if (GENDER = true) {
-      System.out.println("Male");
-    } else {
-      System.out.println("Female");
-    }
-  }
+  public String GENDER;
+ 
 
   // OVERLOADED CONSTRUCTOR / CONSTRUCTOR
-  public friendlydata(double height, int HP, int EXP, int ATK, int AGL, int DEF, boolean GENDER) {
+  public friendlydata(double height, int HP, int EXP, int ATK, int AGL, int DEF, String GENDER) {
     this.height = height;
     this.HP = HP;
     this.EXP = EXP;

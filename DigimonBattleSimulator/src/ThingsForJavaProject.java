@@ -268,7 +268,7 @@ class cost {
 
     solve(meal_cost, tip_percent, tax_percent);
 
-    scanner.close();
+
   }
 
 
@@ -288,7 +288,8 @@ class cost {
 
   // use of the FOR loop.
   public static void forLoop() {
-    for (int i = 0; i <= 10; i = i++) {
+    int i;
+    for (i = 0; i <= 10; i = i++) {
       System.out.println("For loop was used.");
       System.out.println(i);
     }
