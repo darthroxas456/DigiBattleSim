@@ -198,7 +198,7 @@ class Solution2 {
       //BREAK USED BELOW: CAUSES THE PROGRAM SKIP TO THE END OF THE SWITCH AND CONTINUE.
       //CONTINUES USED BELOW: CAUSES THE PROGRAM TO CONTINUE THOUGH THE SWITCH UNTIL THE END IS REACHED.
       switch (true) {
-          case 'a, e, i, o, u'.includes(s[0]):
+          case 'a, e, i, o, u '.includes(s[0]):
               letter = 'A';
           break;
           
