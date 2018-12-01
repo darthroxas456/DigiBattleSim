@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /**
  * This file is used to show polymorphism.
  * @author Owen Rose
@@ -60,4 +59,4 @@ public class Polymorphism_HERE {
       System.out.println("ROAR!!");
     }
   }
-}
+

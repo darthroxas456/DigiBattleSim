@@ -31,6 +31,8 @@ public class friendlydata {
   /**
    * This is the overloaded constructor that stores all the data for the partner digimon.
    */
+  //the error given here by spotbugs if changed causes major errors elsewhere in the project. 
+  //leaving the same because there is no problem during runtime
   public friendlydata(double height, int HP, int EXP, int ATK, int AGL, int DEF, String GENDER) {
     this.height = height;
     this.HP = HP;

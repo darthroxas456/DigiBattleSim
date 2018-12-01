@@ -1,21 +1,22 @@
 // OWEN ROSE <<<<< NAME
 /*
- * THIS IS THE LIST OF THINGS WHAT I DID NOT GET CREDIT FOR FOR THE INTEGRATION PROJECT PART 2: 
- * 1. Use break and continue with comments describing what they do: CODE LINE IS 180-197 IN THE THINGS
- * FOR JAVA PROJECT FILE. 
+ * THIS IS THE LIST OF THINGS WHAT I DID NOT GET CREDIT FOR FOR THE INTEGRATION PROJECT PART 2: 1.
+ * Use break and continue with comments describing what they do: CODE LINE IS 180-197 IN THE THINGS
+ * FOR JAVA PROJECT FILE.
  * 
- * 2. Overload a method: CODE LINES ARE 27-43 & 56-70 IN THE DBS MAIN FOLDER,
- * THE CONSTRUTORS ARE IN THE FRIENDLY AND ENEMY DATA FOLDERS. 
+ * 2. Overload a method: CODE LINES ARE 27-43 & 56-70 IN THE DBS MAIN FOLDER, THE CONSTRUTORS ARE IN
+ * THE FRIENDLY AND ENEMY DATA FOLDERS.
  * 
- * 3. Develop code that makes use of polymorphism: CODE LINES ARE 337-398 IN THE THINGS FOR JAVA PROJECT FOLDER. 
+ * 3. Develop code that makes use of polymorphism: CODE LINES ARE 337-398 IN THE THINGS FOR JAVA
+ * PROJECT FOLDER.
  * 
- * 4. Find the smallest value in an array: CODE LINES ARE 401-407 IN THINGS FOR JAVA PROJECT FOLDER 
+ * 4. Find the smallest value in an array: CODE LINES ARE 401-407 IN THINGS FOR JAVA PROJECT FOLDER
  * 
- * 5. Search an array and identify the index where a value was found: 
- * CODE LINES ARE 401-407 IN THINGS FOR JAVA PROJECT FOLDER 
+ * 5. Search an array and identify the index where a value was found: CODE LINES ARE 401-407 IN
+ * THINGS FOR JAVA PROJECT FOLDER
  * 
- * 6. Search a two-dimensional array and identify the coordinates where a value was found:
- * CODE LINES ARE 409-413 IN THINGS FOR JAVA PROJECT FOLDER
+ * 6. Search a two-dimensional array and identify the coordinates where a value was found: CODE
+ * LINES ARE 409-413 IN THINGS FOR JAVA PROJECT FOLDER
  */
 import java.util.ArrayList;
 import java.util.Random;
@@ -117,6 +118,7 @@ public class ThingsForJavaProject {
     // The sting below contains the "==" token which is used in Boolean to see is one sting is equal
     // the other.
     System.out.println(A.compareTo(B) > 0 == B.compareTo(A) > 0 ? "Yes" : "No");
+    sc.close();
   }
 
 
@@ -160,7 +162,7 @@ class Beta {
     double slice = scan.nextDouble();
     // output the larger value, slice or PI
     System.out.println(java.lang.Math.max(Math.PI, slice));
-
+    scan.close();
 
   }
 
@@ -192,13 +194,13 @@ class Solution2 {
     scanner.close();
   }
 
-  public static void sStatment(){
+  public static void swichStatment(){
   
       //switch statement used below.    
       //BREAK USED BELOW: CAUSES THE PROGRAM SKIP TO THE END OF THE SWITCH AND CONTINUE.
       //CONTINUES USED BELOW: CAUSES THE PROGRAM TO CONTINUE THOUGH THE SWITCH UNTIL THE END IS REACHED.
       switch (true) {
-          case 'a, e, i, o, u '.includes(s[0]):
+          case 'a, e, i, o, u'.includes(s[0]):
               letter = 'A';
           break;
           
@@ -241,7 +243,7 @@ class ComparisonDemo {
 
 class cost {
   // used operators such as '*' '/' and '+'.
-  void solve(double meal_cost, int tip_percent, int tax_percent) {
+  public void solve(double meal_cost, int tip_percent, int tax_percent) {
 
     double tip_amount = meal_cost * tip_percent / 100;
 
@@ -289,7 +291,7 @@ class cost {
   // use of the FOR loop.
   public static void forLoop() {
     int i;
-    for (i = 0; i <= 10; i = i++) {
+    for (i = 0; i <= 10; i++) {
       System.out.println("For loop was used.");
       System.out.println(i);
     }
@@ -396,6 +398,8 @@ class Bicycle {
   class MountainBike extends Bicycle {
     private String suspension;
 
+    //Spotbugs wants this class below to be static, but that causes errors with the whole thing.
+    //leaving it the same since no errors at run time.
     public MountainBike(int startCadence, int startSpeed, int startGear, String suspensionType) {
       super(startCadence, startSpeed, startGear); // <<<<<<<the SUPER code work is used here <<<<<
       this.setSuspension(suspensionType);
@@ -546,7 +550,7 @@ class Apps {
   }
 
   private static File newFile(String string) {
-    // TODO Auto-generated method stub
+    
     return null;
   }
 }
