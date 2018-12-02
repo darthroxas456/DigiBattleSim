@@ -7,8 +7,8 @@
  */
 public class enemydata {
   /**
-   * This class is where all the information that is implemented for the enemy digimon 
-   * in the DBS main is stored using an overloaded constructor. 
+   * This class is where all the information that is implemented for the enemy digimon in the DBS
+   * main is stored using an overloaded constructor.
    */
   public double height;
 
@@ -21,15 +21,15 @@ public class enemydata {
   public int DEF;
 
   public String GENDER;
-  
+
   // OVERLOADED CONSTRUCTOR / CONSTRUCTOR
   /**
    * This is the overloaded constructor that stores all the data for the enemy digimon.
    */
-  public enemydata(double height, int HP, int ATK, int AGL, int DEF, String GENDER){
+  public enemydata(double height, int HP, int ATK, int AGL, int DEF, String GENDER) {
     /*
-     * The errors listed here for spotbugs says that the this statements below should all be private,
-     * but that would defeat the purpose of haveing the this statements in the first place. 
+     * The errors listed here for spotbugs says that the this statements below should all be
+     * private, but that would defeat the purpose of having the this statements in the first place.
      * leaving them the same since there are no errors during runime.
      */
     this.height = height;
@@ -38,10 +38,9 @@ public class enemydata {
     this.AGL = AGL;
     this.DEF = DEF;
     this.GENDER = GENDER;
-   
+
+
   }
 }
-
-
 
 

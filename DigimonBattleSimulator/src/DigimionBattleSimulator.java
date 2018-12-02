@@ -65,9 +65,9 @@ public class DigimionBattleSimulator {
     friendlydata Omnimon = new friendlydata(50.5, 200, 0, 100, 100, 100, "Male");
 
     System.out.println(" These are the stats for all the partner digimon you can have.");
-    System.out.println("Agumon's stats: " + Agumon + "\n " + "Greymon's stats: " + Greymon + "\n "
-        + "MetalGreymon's stats:" + MtlGreymon + "\n " + "WarGreymon's stats: " + WarGreymon + "\n "
-        + "Omnimon's stats: " + Omnimon);
+    System.out.println("Agumon's stats: " + Agumon + "\n " + "\n " + "Greymon's stats: " + Greymon + "\n "
+        + "\n " + "MetalGreymon's stats: " + MtlGreymon + "\n " + "\n " + "WarGreymon's stats: " + WarGreymon + "\n "
+        + "\n " + "Omnimon's stats: " + Omnimon);
     // I WANT TO PRINT THIS (WRITTEN BELOW) AFTER THE DIGITAL TRAINER OBTAINS OMNIMON!!!
     // You have gotten this far. You now are unstoppable.
     // You are unbeatable, no enemy can hold a candle too you.
@@ -95,11 +95,11 @@ public class DigimionBattleSimulator {
     enemydata WarGreymonB = new enemydata(35.0, 100, 50, 50, 51, "Male");
 
     System.out
-        .println(" These are the stats for all the enemy digimon you can encounter in battle.");
-    System.out.println("BlackAgumon's stats: " + BlackAgumon + "\n " + "Patamon's stats: " + Patamon
-        + "\n " + "Growlmon's stats:" + Growlmon + "\n " + "Devilmon's stats: " + Devilmon + "\n "
-        + "WarGrowlmon's stats: " + WarGrowlmon + "RiseGreymon's stats: " + RiseGreymon
-        + "Gallantmon's stats: " + Gallantmon + "\n " + "Black WarGreymon's stats" + WarGreymonB);
+        .println("\n " + " These are the stats for all the enemy digimon you can encounter in battle.");
+    System.out.println("\n " + "BlackAgumon's stats: " + BlackAgumon + "\n " + "\n " + "Patamon's stats: " + Patamon
+        + "\n " + "\n " + "Growlmon's stats: " + Growlmon + "\n " + "\n " + "Devilmon's stats: " + Devilmon + "\n "
+        + "\n " + "WarGrowlmon's stats: " + WarGrowlmon + "\n "+ "\n " +"RiseGreymon's stats: " + RiseGreymon
+        + "\n " + "\n " + "Gallantmon's stats: " + Gallantmon + "\n " + "\n " + "Black WarGreymon's stats: " + WarGreymonB);
 
     // CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE
     // ThingsForJavaProject.doProject();
