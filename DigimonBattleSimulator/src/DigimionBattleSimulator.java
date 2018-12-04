@@ -46,28 +46,28 @@ public class DigimionBattleSimulator {
 
     // 1 EXP== 1 enemy defeated!
 
-    friendlydata Agumon = new friendlydata(5.5, 25, 0, 10, 10, 10, "Male");
+    FriendlyDigimon Agumon = new FriendlyDigimon(5.5, 25, 0, 10, 10, 10, "Male");
 
     // once EXP = 10 Agumon digivolves into Greymon.
 
-    friendlydata Greymon = new friendlydata(25.7, 50, 0, 20, 20, 20, "Male");
+    FriendlyDigimon Greymon = new FriendlyDigimon(25.7, 50, 0, 20, 20, 20, "Male");
 
     // once EXP = 20 Greymon digivolves into MtlGreymon.
 
-    friendlydata MtlGreymon = new friendlydata(30.5, 75, 0, 35, 35, 35, "Male");
+    FriendlyDigimon MtlGreymon = new FriendlyDigimon(30.5, 75, 0, 35, 35, 35, "Male");
 
     // once EXP = 40 MtlGreymon Digivolves into WarGreymon.
 
-    friendlydata WarGreymon = new friendlydata(35.0, 100, 0, 50, 50, 50, "Male");
+    FriendlyDigimon WarGreymon = new FriendlyDigimon(35.0, 100, 0, 50, 50, 50, "Male");
 
     // once EXP = 100 WarGreymon digivolves into Omnimon.
 
-    friendlydata Omnimon = new friendlydata(50.5, 200, 0, 100, 100, 100, "Male");
+    FriendlyDigimon Omnimon = new FriendlyDigimon(50.5, 200, 0, 100, 100, 100, "Male");
 
-    System.out.println(" These are the stats for all the partner digimon you can have.");
-    System.out.println("Agumon's stats: " + Agumon + "\n " + "\n " + "Greymon's stats: " + Greymon + "\n "
-        + "\n " + "MetalGreymon's stats: " + MtlGreymon + "\n " + "\n " + "WarGreymon's stats: " + WarGreymon + "\n "
-        + "\n " + "Omnimon's stats: " + Omnimon);
+    System.out.println("\n " + " These are the stats for all the partner digimon you can have.");
+    System.out.println("\n " + "Agumon's stats: " + Agumon.toString() + "\n " + "\n " + "Greymon's stats: " + Greymon.toString() + "\n "
+        + "\n " + "MetalGreymon's stats: " + MtlGreymon.toString() + "\n " + "\n " + "WarGreymon's stats: " + WarGreymon.toString() + "\n "
+        + "\n " + "Omnimon's stats: " + Omnimon.toString());
     // I WANT TO PRINT THIS (WRITTEN BELOW) AFTER THE DIGITAL TRAINER OBTAINS OMNIMON!!!
     // You have gotten this far. You now are unstoppable.
     // You are unbeatable, no enemy can hold a candle too you.
@@ -78,28 +78,28 @@ public class DigimionBattleSimulator {
 
 
     // start of enemy data
-    enemydata BlackAgumon = new enemydata(4.6, 20, 8, 16, 6, "Female");
+    Digimon BlackAgumon = new Digimon(4.6, 20, 8, 16, 6, "Female");
 
-    enemydata Patamon = new enemydata(4.6, 20, 15, 4, 1, "Male");
+    Digimon Patamon = new Digimon(4.6, 20, 15, 4, 1, "Male");
 
-    enemydata Growlmon = new enemydata(25.7, 45, 20, 15, 7, "Male");
+    Digimon Growlmon = new Digimon(25.7, 45, 20, 15, 7, "Male");
 
-    enemydata Devilmon = new enemydata(25.6, 50, 25, 20, 10, "Male");
+    Digimon Devilmon = new Digimon(25.6, 50, 25, 20, 10, "Male");
 
-    enemydata WarGrowlmon = new enemydata(30.0, 70, 30, 30, 30, "Female");
+    Digimon WarGrowlmon = new Digimon(30.0, 70, 30, 30, 30, "Female");
 
-    enemydata RiseGreymon = new enemydata(30.2, 75, 35, 25, 20, "Female");
+    Digimon RiseGreymon = new Digimon(30.2, 75, 35, 25, 20, "Female");
 
-    enemydata Gallantmon = new enemydata(36.2, 90, 45, 50, 40, "Male");
+    Digimon Gallantmon = new Digimon(36.2, 90, 45, 50, 40, "Male");
 
-    enemydata WarGreymonB = new enemydata(35.0, 100, 50, 50, 51, "Male");
+    Digimon WarGreymonB = new Digimon(35.0, 100, 50, 50, 51, "Male");
 
     System.out
         .println("\n " + " These are the stats for all the enemy digimon you can encounter in battle.");
-    System.out.println("\n " + "BlackAgumon's stats: " + BlackAgumon + "\n " + "\n " + "Patamon's stats: " + Patamon
-        + "\n " + "\n " + "Growlmon's stats: " + Growlmon + "\n " + "\n " + "Devilmon's stats: " + Devilmon + "\n "
-        + "\n " + "WarGrowlmon's stats: " + WarGrowlmon + "\n "+ "\n " +"RiseGreymon's stats: " + RiseGreymon
-        + "\n " + "\n " + "Gallantmon's stats: " + Gallantmon + "\n " + "\n " + "Black WarGreymon's stats: " + WarGreymonB);
+    System.out.println("\n " + "BlackAgumon's stats: " + BlackAgumon.toString() + "\n " + "\n " + "Patamon's stats: " + Patamon.toString()
+        + "\n " + "\n " + "Growlmon's stats: " + Growlmon.toString() + "\n " + "\n " + "Devilmon's stats: " + Devilmon.toString() + "\n "
+        + "\n " + "WarGrowlmon's stats: " + WarGrowlmon.toString() + "\n "+ "\n " +"RiseGreymon's stats: " + RiseGreymon.toString()
+        + "\n " + "\n " + "Gallantmon's stats: " + Gallantmon.toString() + "\n " + "\n " + "Black WarGreymon's stats: " + WarGreymonB.toString());
 
     // CODE FOR THINGS NEEDED FOR JAVA PROJECT. COMMENT "//" THEM OUT WHEN NOT IN USE
     // ThingsForJavaProject.doProject();

@@ -5,7 +5,7 @@
  * 
  * @author Owen Rose
  */
-public class enemydata {
+public class Digimon {
   /**
    * This class is where all the information that is implemented for the enemy digimon in the DBS
    * main is stored using an overloaded constructor.
@@ -26,7 +26,7 @@ public class enemydata {
   /**
    * This is the overloaded constructor that stores all the data for the enemy digimon.
    */
-  public enemydata(double height, int HP, int ATK, int AGL, int DEF, String GENDER) {
+  public Digimon(double height, int HP, int ATK, int AGL, int DEF, String GENDER) {
     /*
      * The errors listed here for spotbugs says that the this statements below should all be
      * private, but that would defeat the purpose of having the this statements in the first place.
@@ -40,6 +40,11 @@ public class enemydata {
     this.GENDER = GENDER;
 
 
+  }
+
+  public String toString() {
+    return "Height: " + height + ", Health: " + HP + ", Attack power: " + ATK + ", Agility: " + AGL
+        + ", Defense: " + DEF + ", Gender: " + GENDER;
   }
 }
 
