@@ -5,7 +5,8 @@
  */
 public class Search_Array_For_Value {
   public static void main() {
-
+    System.out.println("\n This next line of code tells you if you scored a 100 on one of your test and which test it was.");
+    System.out.println("The Scores are: 87, 75, 98, 100, 82, 72, 88, 92, 60, 78");
     int[] scores = {87, 75, 98, 100, 82, 72, 88, 92, 60, 78};
 
     boolean found;

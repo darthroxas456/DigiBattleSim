@@ -25,6 +25,7 @@ import java.util.Iterator;
 import java.util.Set;
 import javax.swing.JOptionPane;
 
+
 // GREETING BELOW
 
 // to save everything click save aLL and then right click on the java folder and click delete.
@@ -109,30 +110,25 @@ public class DigimionBattleSimulator {
         + "\n " + "WarGrowlmon's stats: " + WarGrowlmon.toString() + "\n " + "\n "
         + "RiseGreymon's stats: " + RiseGreymon.toString() + "\n " + "\n " + "Gallantmon's stats: "
         + Gallantmon.toString() + "\n " + "\n " + "Black WarGreymon's stats: "
-        + WarGreymonB.toString());
+        + WarGreymonB.toString() + "\n " + "\n ");
 
 
     // CODE FOR THINGS NEEDED FOR JAVA PROJECT.
     ThingsForJavaProject.doProject();
-    cost.doWHile();
-    cost.forLoop();
-    Polymorphism_HERE.do9();
-    Search_Array_For_Value.main();
     ThingsForJavaProject.compareStrings();
     ThingsForJavaProject.area();
     ThingsForJavaProject.randomizer();
     Beta.main();
     Solution2.main();
     ComparisonDemo.main();
-    cost.doWHile();
+    cost.solve(25.99, .5, .06);
+    cost.forLoop();
     Main.main();
     App.main();
     apples.main();
     pineapple.main();
-    Apps.main();
-
-
-
+   Polymorphism_HERE.do9();
+   Search_Array_For_Value.main();
   }
 
   class Bicycle {
@@ -197,6 +193,7 @@ public class DigimionBattleSimulator {
       }
     }
   }
+
 
   class Colony implements Iterable<Colony.Penguin> {
     class Penguin {

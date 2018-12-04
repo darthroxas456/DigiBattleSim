@@ -5,7 +5,7 @@
 public class Polymorphism_HERE {
   
     public static void do9() {
-      System.out.println("Module 10");
+      System.out.println("\n This next set of code uses polymorphism.");
       Cat CoCo = new Cat();
       Dog Bella = new Dog();
       Animal[] myPets = { CoCo, Bella }; // this is polymorphism
