@@ -123,7 +123,7 @@ public class ThingsForJavaProject {
 
 
   // header and parameter listed below.
-  public void area() {
+  public static void area() {
     double length = 5.0;
     double width = 2.5;
     System.out.println(calculateArea(length, width));
@@ -131,7 +131,7 @@ public class ThingsForJavaProject {
 
   // method call and argument is listed below: calculateArea=call (double side1, double
   // side2)=argument.
-  public double calculateArea(double side1, double side2) {
+  public static double calculateArea(double side1, double side2) {
     double area;
     area = side1 * side2;
     return area;
@@ -140,7 +140,7 @@ public class ThingsForJavaProject {
 
 
 
-  public void randomizer() {
+  public static void randomizer() {
     // the random class is used below.
     Random randomGen = new Random();
     System.out.println(randomGen.nextInt(54));
@@ -154,7 +154,7 @@ public class ThingsForJavaProject {
 
 
 class Beta {
-  public void main(String[] args) {
+  public static void main() {
 
     Scanner scan = new Scanner(System.in);
     System.out.println("Tell me the size of your slice and I will tell");
@@ -173,9 +173,9 @@ class Beta {
 
 class Solution2 {
   // final is used below
-  private final Scanner scanner = new Scanner(System.in);
+  private static final Scanner scanner = new Scanner(System.in);
 
-  public void main(String[] args) {
+  public static void main() {
     int N = scanner.nextInt();
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -223,7 +223,7 @@ class Solution2 {
 
 class ComparisonDemo {
 
-  public void main(String[] args) {
+  public static void main() {
     // relational and conditional operators were used below.
     int value1 = 1;
     int value2 = 2;
@@ -318,7 +318,7 @@ class cost {
 
 
 class Main {
-  public static void main(String[] args) {
+  public static void main() {
     MightyByte myByte = new MightyByte("00000101");
     System.out.println(myByte.getDecimalValue());
 
@@ -422,7 +422,7 @@ class Bicycle {
 
 
 class App {
-  public static void main(String[] args) {
+  public static void main() {
     // (one dimensional array)
     int[] values = {3, 5, 2343};
 
@@ -441,7 +441,7 @@ class App {
 
 class apples {
 
-  public static void main(String[] args) {
+  public static void main() {
     int bucky[] = {1, 2, 3, 4, 5};
     int sum = 0;
 
@@ -457,7 +457,7 @@ class apples {
 // ARRAY LIST CREATED BELOW VVVV
 
 class pineapple {
-  public static void main(String[] args) {
+  public static void main() {
     ArrayList<Integer> numbers = new ArrayList<Integer>();
 
     // adding
@@ -479,9 +479,6 @@ class pineapple {
 
   }
 }
-
-// ENHANCED FOR LOOP USED BELOW VVVV
-
 
 
 class Colony implements Iterable<Colony.Penguin> {
@@ -532,7 +529,7 @@ class Colony implements Iterable<Colony.Penguin> {
 
 class Apps {
 
-  public static void main(String[] args) {
+  public static void main() {
 
     File file = newFile("test.txt");
 

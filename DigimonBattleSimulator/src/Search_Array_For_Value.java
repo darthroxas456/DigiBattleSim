@@ -4,7 +4,7 @@
  * @author Owen Rose
  */
 public class Search_Array_For_Value {
-  public static void main(String[] args) {
+  public static void main() {
 
     int[] scores = {87, 75, 98, 100, 82, 72, 88, 92, 60, 78};
 
