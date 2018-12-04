@@ -64,7 +64,7 @@ public class DigimionBattleSimulator {
 
     FriendlyDigimon Omnimon = new FriendlyDigimon(50.5, 200, 0, 100, 100, 100, "Male");
 
-    System.out.println("\n " + " These are the stats for all the partner digimon you can have.");
+    System.out.println("\n " + "\n " + " These are the stats for all the partner digimon you can have.");
     System.out.println("\n " + "Agumon's stats: " + Agumon.toString() + "\n " + "\n " + "Greymon's stats: " + Greymon.toString() + "\n "
         + "\n " + "MetalGreymon's stats: " + MtlGreymon.toString() + "\n " + "\n " + "WarGreymon's stats: " + WarGreymon.toString() + "\n "
         + "\n " + "Omnimon's stats: " + Omnimon.toString());
@@ -95,7 +95,7 @@ public class DigimionBattleSimulator {
     Digimon WarGreymonB = new Digimon(35.0, 100, 50, 50, 51, "Male");
 
     System.out
-        .println("\n " + " These are the stats for all the enemy digimon you can encounter in battle.");
+        .println("\n " + "\n " + " These are the stats for all the enemy digimon you can encounter in battle.");
     System.out.println("\n " + "BlackAgumon's stats: " + BlackAgumon.toString() + "\n " + "\n " + "Patamon's stats: " + Patamon.toString()
         + "\n " + "\n " + "Growlmon's stats: " + Growlmon.toString() + "\n " + "\n " + "Devilmon's stats: " + Devilmon.toString() + "\n "
         + "\n " + "WarGrowlmon's stats: " + WarGrowlmon.toString() + "\n "+ "\n " +"RiseGreymon's stats: " + RiseGreymon.toString()
