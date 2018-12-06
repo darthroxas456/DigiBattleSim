@@ -36,7 +36,7 @@ public class DigimionBattleSimulator {
 
   // Hello, and welcome to the Digimon Battle Simulator by Owen Rose.<--Greeting
   // This program is a turn based battle simulator in the digital monster universe. <--Description
-  public static void main(String[] args) {
+  public static void menu() {
     // escape sequence below (\n)
     System.out.println("Hello, Digital Trainer, \n and welcome to Digimon Battle Simulator!");
     // The string below is a sting to allow the string after it to have 2 acceptable values when
@@ -115,6 +115,11 @@ public class DigimionBattleSimulator {
         + Gallantmon.toString() + "\n " + "\n " + "Black WarGreymon's stats: "
         + WarGreymonB.toString() + "\n " + "\n ");
 
+
+  }
+
+  // CODE FOR THINGS NEEDED FOR JAVA PROJECT.
+  public static void main(String[] args) {
     System.out.println(
         "Please select one of the following items by typing in the number assigned to it.");
 
@@ -123,13 +128,6 @@ public class DigimionBattleSimulator {
         + "\n " + "6. Compare Int Values" + "\n " + "7. Solving Meal Prices" + "\n "
         + "8. For Loops" + "\n " + "9. Binary" + "\n " + "0. Arrays" + "\n " + "10. Sum of an Array"
         + "\n " + "11. Array List" + "\n " + "12. Polymorphism" + "\n " + "13. Searching an Array");
-
-    DigimionBattleSimulator.menu();
-    scanner.close();
-  }
-
-  // CODE FOR THINGS NEEDED FOR JAVA PROJECT.
-  public static void menu() {
     int N = scanner.nextInt();
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -161,6 +159,8 @@ public class DigimionBattleSimulator {
       Polymorphism_HERE.do9();
     } else if (N == 13) {
       Search_Array_For_Value.arrayValue();
+    } else if (N == 14) {
+      DigimionBattleSimulator.menu();
     } else {
       System.out.println("Try again.");
     }
@@ -169,51 +169,54 @@ public class DigimionBattleSimulator {
     int value;
     do {
       value = scanner.nextInt();
-      if (value == 1) { 
+      if (value == 1) {
         System.out.println("Please enter your selection:" + "\n" + "\n" + "       MEMU:" + "\n "
-          + "1. Item Casting" + "\n " + "2. Comparing Strings" + "\n " + "3. Finding Area" + "\n "
-          + "4. Randomizer" + "\n " + "5. Picking a Number" + "\n " + "6. Compare Int Values"
-          + "\n " + "7. Solving Meal Prices" + "\n " + "8. For Loops" + "\n " + "9. Binary" + "\n "
-          + "0. Arrays" + "\n " + "10. Sum of an Array" + "\n " + "11. Array List" + "\n "
-          + "12. Polymorphism" + "\n " + "13. Searching an Array");
-      N = scanner.nextInt();
-      if (N == 1) {
-        ThingsForJavaProject.doProject();
-      } else if (N == 2) {
-        ThingsForJavaProject.compareStrings();
-      } else if (N == 3) {
-        ThingsForJavaProject.area();
-      } else if (N == 4) {
-        ThingsForJavaProject.randomizer();
-      } else if (N == 5) {
-        Solution2.choice();
-      } else if (N == 6) {
-        ComparisonDemo.compare();
-      } else if (N == 7) {
-        cost.solve(25.99, .5, .06);
-      } else if (N == 8) {
-        cost.forLoop();
-      } else if (N == 9) {
-        Main.binary();
-      } else if (N == 0) {
-        App.arrays();
-      } else if (N == 10) {
-        apples.arraySum();
-      } else if (N == 11) {
-        pineapple.listOfArrays();
-      } else if (N == 12) {
-        Polymorphism_HERE.do9();
-      } else if (N == 13) {
-        Search_Array_For_Value.arrayValue();
-      } else {
-        System.out.println("Try again.");
-      }
-      System.out.println("Would you like to try another feature?"
-          + "\n Press 1 to continue or 2 to end the program.");
+            + "1. Item Casting" + "\n " + "2. Comparing Strings" + "\n " + "3. Finding Area" + "\n "
+            + "4. Randomizer" + "\n " + "5. Picking a Number" + "\n " + "6. Compare Int Values"
+            + "\n " + "7. Solving Meal Prices" + "\n " + "8. For Loops" + "\n " + "9. Binary"
+            + "\n " + "0. Arrays" + "\n " + "10. Sum of an Array" + "\n " + "11. Array List" + "\n "
+            + "12. Polymorphism" + "\n " + "13. Searching an Array" + "\n " + "14. Digimon Stats");
+        N = scanner.nextInt();
+        if (N == 1) {
+          ThingsForJavaProject.doProject();
+        } else if (N == 2) {
+          ThingsForJavaProject.compareStrings();
+        } else if (N == 3) {
+          ThingsForJavaProject.area();
+        } else if (N == 4) {
+          ThingsForJavaProject.randomizer();
+        } else if (N == 5) {
+          Solution2.choice();
+        } else if (N == 6) {
+          ComparisonDemo.compare();
+        } else if (N == 7) {
+          cost.solve(25.99, .5, .06);
+        } else if (N == 8) {
+          cost.forLoop();
+        } else if (N == 9) {
+          Main.binary();
+        } else if (N == 0) {
+          App.arrays();
+        } else if (N == 10) {
+          apples.arraySum();
+        } else if (N == 11) {
+          pineapple.listOfArrays();
+        } else if (N == 12) {
+          Polymorphism_HERE.do9();
+        } else if (N == 13) {
+          Search_Array_For_Value.arrayValue();
+        } else if (N == 14) {
+          DigimionBattleSimulator.menu();
+        } else {
+          System.out.println("Try again.");
+        }
+        System.out.println("Would you like to try another feature?"
+            + "\n Press 1 to continue or 2 to end the program.");
       }
     } while (value == 1);
     // if while is true DO repeats.
     System.out.println("Have a good day!!!");
+    scanner.close();
   }
 
   class Bicycle {
