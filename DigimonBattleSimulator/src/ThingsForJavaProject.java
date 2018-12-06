@@ -21,9 +21,6 @@
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.*;
 
 public class ThingsForJavaProject {
@@ -209,7 +206,7 @@ class Solution2 {
 
     scanner.close();
   }
-
+/*
   public static void switchStatment(){
   
       //switch statement used below.    
@@ -234,6 +231,7 @@ class Solution2 {
       }
       return letter;
   }
+  */
 }
 
 
@@ -275,7 +273,7 @@ class cost {
     System.out.println(Math.round(TotalCost));
   }
 
-  private final Scanner scanner = new Scanner(System.in);
+  
 
   public void price() {
     double meal_cost = 25.99;
