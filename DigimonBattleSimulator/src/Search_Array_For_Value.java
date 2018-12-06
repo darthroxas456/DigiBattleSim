@@ -4,7 +4,7 @@
  * @author Owen Rose
  */
 public class Search_Array_For_Value {
-  public static void main() {
+  public static void arrayValue() {
     System.out.println("\n"
         + "This next line of code tells " 
         + "you if you scored a 100 on one of your test and which test it was.");

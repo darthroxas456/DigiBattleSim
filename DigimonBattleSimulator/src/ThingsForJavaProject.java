@@ -160,7 +160,7 @@ public class ThingsForJavaProject {
 
 
 class Beta {
-  public static void main() {
+  public static void math() {
 
 
     System.out.println("\n "
@@ -180,7 +180,7 @@ class Solution2 {
   // final is used below
   private static final Scanner scanner = new Scanner(System.in);
 
-  public static void main() {
+  public static void choice() {
     System.out.println("\n " + "please enter a between 1 and 25.");
     int N = scanner.nextInt();
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -203,7 +203,7 @@ class Solution2 {
     } while (value < 1 || value > 10);
     // if while is true DO repeats.
     System.out.println("you have entered a valid number.");
-
+//copied and used for menu system.
     scanner.close();
   }
 /*
@@ -237,7 +237,7 @@ class Solution2 {
 
 class ComparisonDemo {
 
-  public static void main() {
+  public static void compare() {
     // relational and conditional operators were used below.
     System.out.println(
         "\n " + "this next sequence will compare value 1 and value 2 in various different ways.");
@@ -316,7 +316,7 @@ class cost {
 
 
 class Main {
-  public static void main() {
+  public static void binary() {
     System.out.println(" \n"
         + "this next line gets a how many 0s are in the binary code before it hits a 1 in the line: 00000101.");
     MightyByte myByte = new MightyByte("00000101");
@@ -422,7 +422,7 @@ class Bicycle {
 
 
 class App {
-  public static void main() {
+  public static void arrays() {
     System.out.println(" \n"
         + "this mext line gets the value saved in the position 0 in a one dimensional array.");
     // (one dimensional array)
@@ -444,7 +444,7 @@ class App {
 
 class apples {
 
-  public static void main() {
+  public static void arraySum() {
     System.out.println(" \n"
         + "this next set of code uses an the numbers in an array to added them together and get a sum of the numbers: 1, 2, 3, 4, and 5.");
     int bucky[] = {1, 2, 3, 4, 5};
@@ -462,7 +462,7 @@ class apples {
 // ARRAY LIST CREATED BELOW VVVV
 
 class pineapple {
-  public static void main() {
+  public static void listOfArrays() {
     ArrayList<Integer> numbers = new ArrayList<Integer>();
     // adding
     numbers.add(10);
