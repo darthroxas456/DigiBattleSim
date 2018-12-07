@@ -1,1 +1,2 @@
-start javaw -jar DBS.jar
+start java -jar DBS.jar
+ pause
